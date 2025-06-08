@@ -1,0 +1,4 @@
+name: endermite
+version: '1.0.0'
+main: org.vanillacraft.endermite.endermite.Endermite
+api-version: '1.21'
