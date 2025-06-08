@@ -2,6 +2,7 @@ package org.vanillacraft.endermite.endermite;
 
 import io.papermc.paper.plugin.lifecycle.event.types.LifecycleEvents;
 import org.bukkit.plugin.java.JavaPlugin;
+import org.vanillacraft.endermite.home.EndermiteHome;
 import org.vanillacraft.endermite.warp.EndermiteWarp;
 
 import java.io.IOException;
@@ -19,8 +20,10 @@ public final class Endermite extends JavaPlugin {
         }
         Endermite.inst = this;
         EndermiteWarp warp = new EndermiteWarp(this);
+        EndermiteHome home = new EndermiteHome(this);
         this.getLifecycleManager().registerEventHandler(LifecycleEvents.COMMANDS, commands -> {
             warp.register(commands);
+            home.register(commands);
         });
     }
 
