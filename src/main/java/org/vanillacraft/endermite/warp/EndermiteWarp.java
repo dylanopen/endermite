@@ -18,8 +18,6 @@ public class EndermiteWarp {
     LiteralArgumentBuilder<CommandSourceStack> cmdDelwarp;
     LiteralArgumentBuilder<CommandSourceStack> cmdWarps;
 
-    static Endermite plugin;
-
     public EndermiteWarp(Endermite plugin) {
         try {
             Warp.loadWarpsFromFile(plugin.getDataFolder() + "/warps.endermite");

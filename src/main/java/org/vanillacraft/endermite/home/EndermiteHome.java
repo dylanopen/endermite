@@ -18,8 +18,6 @@ public class EndermiteHome {
     LiteralArgumentBuilder<CommandSourceStack> cmdDelhome;
     LiteralArgumentBuilder<CommandSourceStack> cmdHomes;
 
-    static Endermite plugin;
-
     public EndermiteHome(Endermite plugin) {
         try {
             Home.loadHomesFromFile(plugin.getDataFolder() + "/homes.endermite");
